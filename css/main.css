@@ -272,7 +272,7 @@ flex-flow: row wrap;
 }
 
 
-header content-wrapper {
+header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,6 +280,8 @@ header content-wrapper {
 }
 
 header nav{
+  width:60%;
+  margin:50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,6 +289,7 @@ header nav{
 }
 
 header nav ul{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -380,7 +383,10 @@ p {
     align-items: center;
     
 }
-
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
 
 
 
