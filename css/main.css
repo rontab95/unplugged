@@ -97,15 +97,15 @@ textarea {
 }
 
 /* ==========================================================================
-     Author's custom styles
+     Author's custom styles Some Global Styles here too.
      ========================================================================== */
-/* General Styles */
 
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
+  text-align: left;
 }
 
 
@@ -129,7 +129,8 @@ a {
 
 
 
-h3, h4 {
+h3,
+h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.125em;
@@ -140,7 +141,11 @@ p {
   font-size: .875em;
   line-height: 1.285;
 }
-img {}
+
+img {
+
+  width: 100%
+}
 
 figure {}
 
@@ -148,7 +153,8 @@ address {}
 
 .content-wrapper {}
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -163,7 +169,7 @@ ul, ol {
 aside .form {
   margin-top: 30px;
 }
- 
+
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -171,7 +177,7 @@ input[type=text] {
   font-style: italic;
   padding: 1em;
 }
- 
+
 input[type=button] {
   width: 100%;
   padding: 20px 0;
@@ -229,7 +235,7 @@ header nav {
   flex-flow: row wrap;
 }
 
-hheader nav ul {
+header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -276,6 +282,11 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -400,12 +411,6 @@ aside {
 
 
 
-img {
-
-  max-width: 50%;
-  max-height: 100%;
-}
-
 /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -516,14 +521,16 @@ img {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
-}
+  }
+
   header nav {
     width: 100%;
   }
 
   header nav ul {
     justify-content: space-between;
-}
+  }
+
   .header-divider {
     display: none;
   }
@@ -599,11 +606,7 @@ img {
     align-items: center;
   }
 
-  img {
 
-    max-width: 50%;
-    max-height: 100%;
-  }
 
 }
 
