@@ -147,7 +147,10 @@ img {
   width: 100%
 }
 
-figure {}
+figure {
+  margin: 0;
+
+}
 
 address {}
 
@@ -193,12 +196,20 @@ input[type=button] {
 }
 
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 
 
 
 header,
 footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,6 +306,7 @@ footer .copyright {
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,13 +316,19 @@ aside {
 /* Features */
 
 .features {
+  background: url(../img/unplugged-retreat-features.jpg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  
 }
 
 .features h2 {
-  margin-bottom: 60px;
+
+  font-size: 2.25em;
+  width:90%
 }
 
 .features article {
@@ -332,6 +350,8 @@ aside {
 /* Reviews */
 
 .reviews {
+
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -523,8 +543,10 @@ aside {
     justify-content: space-between;
   }
 
+
+
   header nav {
-    width: 100%;
+    width: 50%;
   }
 
   header nav ul {
@@ -533,6 +555,10 @@ aside {
 
   .header-divider {
     display: none;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   /* Hero Area */
@@ -653,6 +679,12 @@ aside {
   .reviews article div {
     width: 100%;
   }
+
+  /***FONTS***/
+
+  h3, h4 {
+    font-size: 1.875em;
+}
 
   /* ==========================================================================
    About Page
