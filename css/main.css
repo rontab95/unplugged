@@ -277,7 +277,7 @@
   .faq .content-wrapper {
     margin: 50px 0 0 0;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-flow: row wrap;
   }
@@ -288,9 +288,21 @@
   
   .faq-content {
     display:flex;
-    flex-basis:100%;
+    /* flex-basis:100%; */
     margin-bottom: 50px;
   }
+
+   .faq .content-wrapper {
+    justify-content: space-between;
+}
+
+.faq-content {
+    flex-basis: 40%;
+}
+
+.faq h2 {
+    width: 100%;
+}
   
   /* ==========================================================================
      Helper classes
