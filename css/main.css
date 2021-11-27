@@ -255,14 +255,16 @@ header nav ul {
 }
 
 footer {
+  text-align:center;
   flex-direction: column;
+
 }
 
 footer p {
   margin: 0;
   display: flex;
   justify-content: center;
-  ;
+  
 }
 
 footer .content-wrapper {
@@ -281,10 +283,16 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
 
 footer .copyright {
   margin: 20px 0;
@@ -617,13 +625,18 @@ aside {
     width: 100%;
   }
 
-  /* Footer */
+  Footer 
   footer .content-wrapper {
     width: 100%;
     margin: 100px 0;
-  }
+  } 
 
-  .footer-content {}
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 
   footer .contact {
     margin-bottom: 0;
@@ -634,6 +647,29 @@ aside {
   }
 
 
+
+    footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    /* justify-content: space-between; */
+  }
+  
+  
 
   .mission-content {
     display: flex;
@@ -710,12 +746,6 @@ aside {
   width: 100%;
 }
 
-/***FONTS***/
-
-h3,
-h4 {
-  font-size: 1.875em;
-}
 
 /* ==========================================================================
    About Page
