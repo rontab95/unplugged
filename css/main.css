@@ -332,6 +332,7 @@ aside {
 }
 
 
+
 /* Features */
 
 .features {
@@ -380,6 +381,7 @@ aside {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -550,6 +552,19 @@ aside {
     margin: 100px 0;
   }
 
+  h2{
+
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+}
+  
+  
+  
   /* Header */
 
 
@@ -597,7 +612,7 @@ aside {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 50%;
+    width: 40%;
     margin: 0;
   }
 
@@ -619,12 +634,27 @@ aside {
   }
 
   /* Reviews */
-  .reviews article {}
 
+  .reviews h2 {
+    width: 85%;
+}
+.reviews article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews h3 {
+  width: 75%;
+  margin: 0;
+}
+
+  .reviews article figure,
   .reviews article div {
-    width: 100%;
+    width: 49%;
   }
 
+
+  /****FOOTER****/
   Footer 
   footer .content-wrapper {
     width: 100%;
@@ -719,7 +749,7 @@ aside {
 
   /* Aside */
   aside .content-wrapper {
-    justify-content: center;
+    justify-content: space-around;
   }
 
   aside .content-wrapper .form-description,
@@ -739,11 +769,16 @@ aside {
     flex-direction: column;
     align-items: center;
   }
+
+/***FONTS****/
+
+p {
+  font-size: 1.125em;
+  line-height: 1.333;
 }
 
-/* Reviews */
-.reviews article div {
-  width: 100%;
+
+
 }
 
 
@@ -761,10 +796,6 @@ aside {
 .faq h2 {
   width: 100%;
 }
-
-
-
-
 
 /* ==========================================================================
      Print styles.
