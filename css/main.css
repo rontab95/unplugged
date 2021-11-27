@@ -16,9 +16,6 @@ html {
   line-height: 1.4;
 }
 
-
-
-
 /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -154,7 +151,12 @@ figure {
 
 address {}
 
-.content-wrapper {}
+.content-wrapper {
+
+  width: 90%;
+  margin: 50px 0;
+}
+
 
 ul,
 ol {
@@ -303,6 +305,14 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 /* Aside */
 
 aside {
@@ -313,6 +323,7 @@ aside {
   flex-flow: row wrap;
 }
 
+
 /* Features */
 
 .features {
@@ -322,14 +333,15 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  
+
 }
 
-.features h2 {
-
-  font-size: 2.25em;
-  width:90%
+.features i {
+  /****ICONS****/
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
+
 
 .features article {
   width: 63%;
@@ -345,6 +357,7 @@ aside {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /* Reviews */
@@ -545,8 +558,10 @@ aside {
 
 
 
+
   header nav {
-    width: 50%;
+    /***ADJUSTS THE  DISTANCE BETWEEN THE MENU ITEMS**/
+    width: 20%;
   }
 
   header nav ul {
@@ -564,13 +579,17 @@ aside {
   /* Hero Area */
 
   /* Aside */
+  
   aside .content-wrapper {
     margin: 50px 0;
-  }
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 100%;
+    width: 50%;
     margin: 0;
   }
 
@@ -579,12 +598,16 @@ aside {
   .features article {
 
     display: flex;
-    flex-basis: 100%;
+    flex-basis: 50%;/***Divides the columns into two***/
+    align-items: center;
+    flex-flow: column wrap;
 
   }
 
+
   .features .features-item-description {
-    width: 100%;
+    /****Position/distribution of the features grid width***/
+    width: 62%;
   }
 
   /* Reviews */
@@ -643,6 +666,8 @@ aside {
     max-width: 960px;
   }
 
+  
+
   /**HEADER**/
 
   header {
@@ -663,7 +688,7 @@ aside {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 100%;
+    width: 30%;
   }
 
   /* Features */
@@ -671,37 +696,43 @@ aside {
     width: 100%;
   }
 
+
   .features article {
-    flex-basis: 100%;
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  /* Reviews */
-  .reviews article div {
-    width: 100%;
-  }
-
-  /***FONTS***/
-
-  h3, h4 {
-    font-size: 1.875em;
 }
 
-  /* ==========================================================================
+/* Reviews */
+.reviews article div {
+  width: 100%;
+}
+
+/***FONTS***/
+
+h3,
+h4 {
+  font-size: 1.875em;
+}
+
+/* ==========================================================================
    About Page
    ========================================================================== */
-  .mission h2,
-  .contact-section .content-wrapper h2 {
-    width: 100%;
-  }
+.mission h2,
+.contact-section .content-wrapper h2 {
+  width: 100%;
+}
 
-  /* ==========================================================================
+/* ==========================================================================
    FAQ Page
    ========================================================================== */
-  .faq h2 {
-    width: 100%;
-  }
-
+.faq h2 {
+  width: 100%;
 }
+
+
 
 
 
