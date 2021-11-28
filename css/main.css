@@ -255,7 +255,7 @@ header nav ul {
 }
 
 footer {
-  text-align:center;
+  text-align: center;
   flex-direction: column;
 
 }
@@ -264,7 +264,7 @@ footer p {
   margin: 0;
   display: flex;
   justify-content: center;
-  
+
 }
 
 footer .content-wrapper {
@@ -319,6 +319,7 @@ footer .copyright {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
+  margin: 0;
 }
 
 /* Aside */
@@ -398,13 +399,56 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
+
+.mission h2,
+.contact-section .content-wrapper h2 {
+  width: 100%;
+}
+
+/*****MAP*****/
+
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.map-container{
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+
+}
+
+.map-container iframe{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+}
+
 
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -416,6 +460,7 @@ aside {
      ========================================================================== */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -425,27 +470,26 @@ aside {
 .faq .content-wrapper {
   margin: 50px 0 0 0;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
+
 .faq h2 {
+  width: 100%;
   margin-bottom: 40px;
 }
 
-.faq-content {
-  display: flex;
-  /* flex-basis:100%; */
-  margin-bottom: 50px;
-}
+
+
 
 .faq .content-wrapper {
   justify-content: space-between;
 }
 
 .faq-content {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
 
 .faq h2 {
@@ -537,6 +581,7 @@ aside {
   clear: both;
 }
 
+
 /* ==========================================================================
      EXAMPLE Media Queries for Responsive Design.
      These examples override the primary ('mobile first') styles.
@@ -552,7 +597,7 @@ aside {
     margin: 100px 0;
   }
 
-  h2{
+  h2 {
 
     font-size: 2.25em;
     line-height: 1.333;
@@ -561,14 +606,15 @@ aside {
   h3 {
     font-size: 1.5em;
     line-height: 1.25;
-}
-  
-  
-  
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
+
   /* Header */
-
-
-
   header {
     justify-content: space-around;
     padding: 33px 0;
@@ -578,9 +624,6 @@ aside {
     width: 100%;
     justify-content: space-between;
   }
-
-
-
 
   header nav {
     /***ADJUSTS THE  DISTANCE BETWEEN THE MENU ITEMS**/
@@ -601,14 +644,18 @@ aside {
 
   /* Hero Area */
 
+  .hero-area {
+    min-height: 600px;
+  }
+
   /* Aside */
-  
+
   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-}
+  }
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
@@ -621,7 +668,8 @@ aside {
   .features article {
 
     display: flex;
-    flex-basis: 50%;/***Divides the columns into two***/
+    flex-basis: 50%;
+    /***Divides the columns into two***/
     align-items: center;
     flex-flow: column wrap;
 
@@ -637,16 +685,17 @@ aside {
 
   .reviews h2 {
     width: 85%;
-}
-.reviews article {
-  display: flex;
-  justify-content: space-between;
-}
+  }
 
-.reviews h3 {
-  width: 75%;
-  margin: 0;
-}
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
 
   .reviews article figure,
   .reviews article div {
@@ -655,11 +704,10 @@ aside {
 
 
   /****FOOTER****/
-  Footer 
-  footer .content-wrapper {
+  Footer footer .content-wrapper {
     width: 100%;
     margin: 100px 0;
-  } 
+  }
 
   footer .footer-content {
     display: flex;
@@ -678,12 +726,12 @@ aside {
 
 
 
-    footer .content-wrapper {
+  footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
   }
 
-  
+
 
   footer h4 {
     font-size: 1.5em;
@@ -691,15 +739,20 @@ aside {
   }
 
   footer p {
-      line-height: 1.285;
+    line-height: 1.285;
   }
 
   footer .social-icons {
     width: 12.5em;
     /* justify-content: space-between; */
   }
-  
-  
+
+/***ABOUT/MAP***/
+
+.map figure {
+  padding-bottom: 45.5%;
+}
+
 
   .mission-content {
     display: flex;
@@ -721,6 +774,13 @@ aside {
     align-items: center;
   }
 
+  /******ADDRESS CONTACT****/
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
 
 
 }
@@ -728,11 +788,10 @@ aside {
 @media only screen and (min-width: 1200px) {
   /***DESKTOP STYLES HERE***/
 
+
   .content-wrapper {
     max-width: 960px;
   }
-
-  
 
   /**HEADER**/
 
@@ -770,32 +829,42 @@ aside {
     align-items: center;
   }
 
-/***FONTS****/
+  /***FONTS****/
 
-p {
-  font-size: 1.125em;
-  line-height: 1.333;
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
+  /***ABOUT MAP****/
+
+  .map figure {
+    padding-bottom: 37.5%;
 }
 
+  /****FAQ Fonts****/
 
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
+
+
+  /****MISSION****/
+  mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+    font-size: 3em;
+  }
 
 }
 
-
-/* ==========================================================================
-   About Page
-   ========================================================================== */
-.mission h2,
-.contact-section .content-wrapper h2 {
-  width: 100%;
-}
-
-/* ==========================================================================
-   FAQ Page
-   ========================================================================== */
-.faq h2 {
-  width: 100%;
-}
 
 /* ==========================================================================
      Print styles.
