@@ -1,4 +1,4 @@
-# unplugged
+# Unplugged
 <h2>A mock website for an Off the Grid Camp getaway. </h2>
 
 <h2> Screenshot </h2>
@@ -9,7 +9,9 @@
   <li> HTML</li>
   <li> CSS </li>
   <li> JavaScript </li>
-</ul>
+</ul><br>
+
+<h4> Skillcrush Break into Tech Blueprint </h4>
 
 
 
