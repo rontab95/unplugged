@@ -962,3 +962,36 @@
       page-break-after: avoid;
     }
   }
+
+  /* Add spacing between column content */
+.contact-content div {
+  margin-bottom: 20px; 
+  padding: 15px;      
+  border: 1px solid #ddd;
+}
+
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.contact-content div {
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box; 
+}
+
+
+@media (max-width: 768px) {
+  .contact-content div {
+    flex: 1 1 100%; 
+  }
+}
+
+
+.mission-content p {
+  margin-bottom: 15px; 
+  line-height: 1.6;    
+  padding: 10px;       
+}
